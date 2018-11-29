@@ -1,0 +1,269 @@
+@import './css_lib/core/mixin';
+@import './css_lib/components/global';
+img{
+  max-width: 100%;
+}
+.bg-top{
+  background-color: #4d4d4d;
+}
+.header-top{
+  a{
+    display: block;
+    padding: 5px;
+    font-size: 9pt;
+    text-align: center;
+    @include txt-color(#fff, rgba(#fff, .8));
+    @include sm{
+      font-size: 11pt;
+      padding: 5px 10px;
+    }
+
+  }
+  li{
+    @include max-sm{
+      flex: 1;
+    }
+    @include sm{
+      flex: 1;
+    }
+    @include md{
+      flex: none;
+    }
+    @include lg{
+      flex: none;
+    }
+  }
+}
+.header-logo{
+  max-width: 140px;
+  @include sm{
+    max-width: 160px;
+  }
+}
+.header-navbar{
+  @include max-lg{
+    background-image: radial-gradient(rgba(#1d1d1d, .8), rgba(#4d4d4d, .8));
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+    right: 15px;
+    li:not(:last-child){
+      border-bottom: 1px solid rgba(#fff, .3);
+    }
+    >ul>li.dropdown.show > a{
+      background-color: $nocolor!important;
+    }
+    a{
+      display: block;
+      padding: 8px 15px;
+      @include txt-color(#fff, #ddd);
+    }
+    .dropdown-menu{
+      position: static!important;
+      transform: unset!important;
+      width: 100%;
+    }
+  }
+  @include lg{
+    &.collapse{
+      display: block;
+    }
+  }
+  >ul{
+      >li{
+      @include sm{
+        flex: 1;
+      }
+      >a{
+        display: block;
+        @include lg{
+          padding: 20px 5px;
+          height: 100%;
+          text-align: center;
+          font-size: 11pt;
+          @include txt-color(#4d4d4d, #fff);
+          @include bg-color($nocolor, #4d4d4d);
+        }
+      }
+      &.dropdown{
+        &.show{
+          >a{
+            background-color: #4d4d4d;
+            color: #fff;
+          }
+        }
+        .dropdown-menu{
+          background-color: #4d4d4d;
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          @include sm{
+            min-width: 220px;
+          }
+          .dropdown-item {
+            @include bg-color($nocolor, rgba(#fff, .3));
+            a{
+              @include txt-color(#fff, #ddd);
+            }
+          }
+        }
+      }
+    }
+  
+  }
+}
+.img_show{
+  overflow: hidden;
+  img{
+    width: 100%;
+    min-height: 100%;
+  }
+}
+.section-title{
+  padding: 6px 15px;
+  background-color: #1d1d1d;
+  position: relative;
+  color: #fff;
+  font-size: 12pt;
+  margin: 0;
+  &::after{
+    content: '';
+    top:0;
+    right: -14px;
+    position: absolute;
+    height: 100%;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #1d1d1d;
+  }
+}
+.section-navbar{
+  [data-toggle]{
+    color: #4d4d4d;
+    &:hover, &:focus{
+      color: tomato;
+    }
+  }
+  a{
+    display: block;
+    @include txt-color(#4d4d4d, #1d1d1d);
+  }
+  .collapse{
+    @include lg{
+      display: inline-block;
+    }
+  }
+  @include max-lg{
+    position: static;
+    .collapse, .collapsing, .collapse.show{
+      position: absolute!important;
+      right: 15px;
+      z-index: 10;
+      background-image: radial-gradient(rgba(#1d1d1d, .8), rgba(#4d4d4d, .8));
+      border-radius: 5px;
+      margin-top: 10px;
+      width: auto;
+      li:not(:last-child){
+        border-bottom: 1px solid rgba(#fff, .3);
+      }
+    }
+    a{
+      @include txt-color(#fff, #ddd);
+      text-align: left;
+    }
+  }
+}
+.product-card{
+  margin-bottom: 25px;
+  .product-thumb{
+    display: block;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    z-index: 0;
+    &::before{
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: linear-gradient(to right, #1d1d1d, #ddd);
+    }
+    img{
+      max-width: 100%;
+      width: auto;
+      min-height: 100%;
+      @include max-sm{
+        width: 100%;
+      }
+    }
+  }
+  .product-{
+    &title, &content, &price{
+      line-height: 1;
+      text-align: center;
+    }
+  }
+  .product-title{
+    font-size: 13pt;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 0;
+    a{
+      @include txt-color(#1d1d1d, #4d4d4d);
+    }
+  }
+  .product-content{
+    margin: 0;
+    padding: 0;
+  }
+  .product-price{
+    font-size: 15pt;
+    font-weight: bold;
+    color: red;
+    margin: 0;
+    padding: 0;
+  }
+}
+.img-slider .swiper-slide{
+  max-height: unset;
+  overflow: hidden;
+  @include sm{
+    max-height: 130px;
+    img{
+      height: 100%;
+      width: auto;
+      max-width: unset;
+    }
+  }
+  img{
+    width: 100%;
+  }
+}
+.footer{
+  ul > li{
+    > a{
+      color: #4d4d4d;
+      &:hover{
+        font-weight: 600;
+      }
+    }
+    &.active > a{
+      font-weight: 600;
+      color: #4d4d4d;
+    }
+  }
+  address a{
+    @include txt-color(blue, #1d1d1d);
+  }
+  .copyright{
+    background-color: #4d4d4d;
+    *{
+      color: #fff;
+    }
+  }
+}

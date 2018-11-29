@@ -1,0 +1,9 @@
+{
+    "engine": "nunjucks",
+    "domain": "test.ghin",
+    "path_static": "static",
+    "dev_path": "dev",
+    "css_path": "css",
+    "minify": false,
+    "ext": "html"
+}

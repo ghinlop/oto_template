@@ -1,0 +1,70 @@
+{% extends './layout/layout.html' %}
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
+</div>
+<div class="container py-md-5 py-3">
+    <h1 class="text-center d-inline-block section-title mb-3">
+        Tin tuc
+    </h1>
+    <div class="d-flex mb-lg-5 mb-md-4 mb-3 align-items-stretch card-deck">
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card mb-4 h-100">
+                <img class="card-img-top" src="{{img_path}}/10.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="./news-detailt.html" class="text-dark">Card title</a>
+                    </h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">Xem them</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card mb-4 h-100">
+                <img class="card-img-top" src="{{img_path}}/10.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="./news-detailt.html" class="text-dark">Card title</a>
+                    </h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">Xem them</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends './layout/layout.html' %}
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
+</div>
+<div class="container py-md-5 py-3">
+    <h1 class="text-center d-inline-block section-title">
+        Chi tiet san pham (hinh ben duoi)
+    </h1>
+    <article class="row my-3 ">
+        <div class="col-lg-6">
+            <img src="{{img_path}}/10.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+            <ul class="nolist">
+                <li class="py-2">
+                    <strong>ten san pham:</strong>
+                    <h3 class="my-0 text-primary d-lg-inline d-block">Vui long nhin cai hinh roi tu doan</h3>
+                </li>
+                <li class="py-2">
+                    <strong>Xuat Xuat:</strong>
+                    <span>Tung Cua Vo Doi</span>
+                </li>
+                <li class="py-2">
+                    <strong>Hang Ton:</strong>
+                    <span>Chua xem kho chua biet (number) </span>
+                </li>
+                <li class="py-2">
+                    <strong>Gia Tien:</strong>
+                    <h4 class="text-danger my-0 d-inline d-block">50,000,000,000.00 vnd</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 mt-3">
+            <h2 class="text-center d-inline-block section-title">
+                Gioi thieu san pham
+            </h2>
+            <div class="description bg-light rounded p-3">
+                Những năm gần đây Ô TÔ đã và đang dần trở thành phương tiện đi lại phổ biến tại Việt Nam. Cùng với tốc
+                độ phát triển
+                kinh tế, mức thu nhập của người dân ngày càng tăng và nhu cầu đi lại thiết yếu thì việc sở hữu 1 chiếc
+                xe ô tô đang dần
+                phổ biến trong mỗi gia đình người dân Việt Nam. Bonbanh.com - Trang web mua bán ô tô ra đời từ năm 2006
+                với phương châm
+                là cầu nối chia sẻ thông tin giữa người mua xe ô tô và người bán xe ô tô, kênh thông tin mua bán ô tô
+                uy tín và đáng
+                tin cậy.
+            </div>
+        </div>
+    </article>
+</div>
+{% endblock %}

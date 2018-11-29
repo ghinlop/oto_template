@@ -1,0 +1,44 @@
+{% extends './layout/layout.html' %}
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
+</div>
+<div class="container py-md-5 py-3">
+    <h1 class="text-center d-inline-block section-title">
+        Gioi Thieu Ve Chung Toi
+    </h1>
+    <div class="row my-3 align-items-center">
+        <div class="col-lg-6 order-2">
+            <p>
+                Những năm gần đây Ô TÔ đã và đang dần trở thành phương tiện đi lại phổ biến tại Việt Nam. Cùng với tốc độ
+                phát triển
+                kinh tế, mức thu nhập của người dân ngày càng tăng và nhu cầu đi lại thiết yếu thì việc sở hữu 1 chiếc xe ô
+                tô đang dần
+                phổ biến trong mỗi gia đình người dân Việt Nam. Bonbanh.com - Trang web mua bán ô tô ra đời từ năm 2006 với
+                phương châm
+                là cầu nối chia sẻ thông tin giữa người mua xe ô tô và người bán xe ô tô, kênh thông tin mua bán ô tô uy
+                tín và đáng
+                tin cậy.
+            </p>
+            <p>
+                Chúng tôi đã và đang không ngừng cải thiện, phát triển chất lượng dịch vụ để đóng góp một phần tích cực
+                giúp cho người
+                dân Việt Nam dễ dàng tiếp cận và sở hữu chiếc ô tô mơ ước của mình. Tại Bonbanh.com thông tin giá cả và các
+                mẫu xe ô tô
+                mới luôn được cập nhật thường xuyên, đầy đủ và chính xác , bạn có thể dễ dàng tìm kiếm cho mình chiếc xe ô
+                tô cũ / mới
+                ưng ý nhất với giá cả tốt nhất
+            </p>
+        </div>
+        <div class="col-lg-6 order-1">
+            <img src="{{img_path}}/10.jpg" alt="">
+        </div>
+    </div>
+</div>
+{% endblock %}

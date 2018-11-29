@@ -1,0 +1,26 @@
+{
+  "name": "small-tool",
+  "version": "2.3.0",
+  "description": "Small Tool Compiler SCSS, EJS, PUG",
+  "scripts": {
+    "server": "gulp browser-sync",
+    "html": "gulp watch-template",
+    "css": "gulp watch-scss"
+  },
+  "main": "gulpfile.js",
+  "author": "Ghin Lop <ghinlop@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^8.6.5",
+    "browser-sync": "^2.23.7",
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-edgejs": "^0.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0",
+    "st": "^1.2.2"
+  }
+}
